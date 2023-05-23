@@ -1,14 +1,516 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "outfit";
+  background-color: rgb(196, 195, 195);
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  object-fit: cover;
+
 }
 
 
-.video {
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    object-fit: cover;
-  }
+
+.navbar {
+
+  background-color: rgb(27, 27, 27);
+
+
+}
+
+
+
+
+/* productos */
+h2 {
+  text-align: center;
+  margin: 30px;
+}
+
+.productos {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 55px;
+  flex-wrap: wrap;
+  gap: 2em;
+
+}
+
+.productos2 {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  margin-bottom: 55px;
+  flex-wrap: wrap;
+  gap: 2em
+}
+
+
+
+.producto img {
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+  margin-top: 40px
+}
+
+.producto2 img {
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+}
+
+.producto {
+
+  text-align: center;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 390px;
+  height: 420px;
+  background-color: white;
+  align-items: center;
+  border-radius: 5px;
+  padding-top: 30px;
+  transition: 0.3s;
+  cursor: pointer;
+  padding: 16px
+}
+
+.producto p {
+  padding: 10px;
+}
+
+.producto2 p {
+  padding: 10px;
+}
+
+.producto:hover {
+  box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.185);
+  transition: 0.3s;
+}
+
+
+.producto2 {
+  text-align: center;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 390px;
+  height: 420px;
+  background-color: white;
+  align-items: center;
+  border-radius: 5px;
+  padding-top: 30px;
+  transition: 0.3s;
+  cursor: pointer;
+  padding: 20px;
+
+}
+
+.producto2:hover {
+  box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.185);
+  transition: 0.3s;
+
+ 
+}
+
+
+
+
+/* Footer */
+
+footer {
+  background-color: rgb(90, 90, 90);
+
+}
+
+.footer-container {
+
+  padding: 40px 30px 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons a {
+
+  text-decoration: none;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  margin: 10px;
+  border-radius: 50px;
+}
+
+.social-icons a i {
+  font-size: 25px;
+  color: black;
+  opacity: 0.9;
+}
+
+.social-icons a:hover {
+
+  background-color: black;
+  transition: 0.5s;
+}
+
+.social-icons a:hover i {
+  color: white;
+  transition: 0.5s;
+}
+
+.footer-nav {
+
+  margin: 10px 0;
+}
+
+.footer-nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-nav ul li a {
+  color: rgb(187, 185, 185);
+  margin: 15px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.5s;
+
+
+}
+
+.footer-nav ul li a:hover {
+  color: rgb(255, 255, 255);
+
+}
+
+.footer-boton {
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+
+}
+
+.footer-boton p {
+  color: white;
+}
+
+.diseñador {
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+
+/* LOGIN */
+
+.bgimage-usuario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 91vh;
+  background-image: linear-gradient(0deg,
+      rgba(0, 0, 0, 0.527),
+      rgba(0, 0, 0, 0.486)),
+    url(../images/cementerio2.jpg);
+  background-size: cover;
+  background-position: center center;
+  font-size: 40px;
+
+
+}
+
+.login-box {
+  position: absolute;
+  width: 430px;
+  height: 580px;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+  background-color: rgba(172, 172, 172, 0.6);
+  box-shadow: 0px 0px 10px 4px rgba(34, 34, 34, 0.281);
+  border-radius: 5px;
+
+}
+
+.logotactical {
+
+  width: 100px;
+  height: auto;
+  position: absolute;
+  top: -100px;
+  left: calc(50% - 50px)
+}
+
+.login-box h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+}
+
+.login-box label {
+  margin: 0;
+  padding: 0px;
+  display: block;
+  font-size: 18px;
+}
+
+.login-box input {
+  width: 100%;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid #5a2828b6;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #5a2828;
+  font-size: 20px;
+
+}
+
+input.boton {
+  border: none;
+  outline: none;
+  background-color: rgba(117, 114, 114, 0.836);
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px 4px rgba(27, 27, 27, 0.281);
+  font-size: 22px;
+  position: relative;
+  top: 15px;
+  cursor: pointer;
+
+}
+
+.login-box a {
+  text-decoration: none;
+  font-size: 13px;
+  color: rgb(224, 224, 224);
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+  top: 95px;
+  position: relative;
+
+}
+
+.login-box a:hover {
+  color: rgb(255, 252, 252);
+
+
+}
+
+
+/* galaeria de imagenes store */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 400px;
+  grid-gap: 5px;
+  margin: 20px;
+  transition: 0.4s;
+}
+
+
+
+
+.grid-item {
+margin: 20px;
+
+
+
+}
+
+.grid-item img {
+  width: 95%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.grid-item img:hover {
+  transform: scale(1.1);
+
+}
+
+.grid-item:nth-child(3) {
+  grid-column-start: span 3;
   
+}
+
+.store-h2 {
+  font-weight: bold;
+}
+
+
+
+/* locales  */
+
+.cartas {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+
+.card {
+  width: 500px;
+  margin-bottom: 50px;
+  border-radius: 5px;
+transition: 0.4s;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card-header {
+  background-color: #a5a5a5;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.card-content {
+  padding: 10px;
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+}
+
+.imagebg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 91vh;
+
+  background-image: linear-gradient(0deg,
+      rgba(0, 0, 0, 0.527),
+      rgba(0, 0, 0, 0.486)),
+    url(../images/local1.jpg);
+  background-size: cover;
+  background-position: center center;
+  font-size: 40px;
+  margin-bottom: 55px;
+
+
+}
+
+.imagebg_h2 {
+  font-size: 50px;
+font-weight: bold;
+  color: aqua;
+}
+
+/* producto */
+
+.bg-image-local {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 91vh;
+  background-image: linear-gradient(0deg,
+      rgba(0, 0, 0, 0.527),
+      rgba(0, 0, 0, 0.486)),
+    url(../images/cementerio2.jpg);
+  background-size: cover;
+  background-position: center center;
+  font-size: 40px;
+  margin-bottom: 30px;
+
+}
+
+.text-local {
+  color: aqua;
+  font-size: 35px;
+}
+
+.carts-urban {
+  display: flex;
+  justify-content: space-around;
+  height: 500px;
+
+}
+
+@media (max-width:480px) {
+
+  .producto {
+   
+    width: 70%;
+  }
+
+  .producto2 {
+   
+    width: 70%;
+  }
+ 
+  
+  
+  h1 {
+    text-align: right;
+  }
+  .footer-container {
+    padding: 35px 30px 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(1, 100%);
+
+}
+
+
+.grid-item {
+  margin-bottom: 10px;
+  display: flex;
+
+
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.grid-item:nth-child(3) {
+ 
+  grid-column-start: span 1;
+    
+}
+
+.login-box {
+  position: absolute;
+  width: 80%;
+  height: 580px;
+ 
+
+}
+
+/* locales media */
+
+.card {
+  width: 70%;
+  margin-bottom: 50px;
+  border-radius: 5px;
+transition: 0.4s;
+}
+
+
+
+}
+
